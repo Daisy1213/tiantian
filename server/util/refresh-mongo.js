@@ -3,9 +3,9 @@
  */
 const refreshMongo = require('./refresh-util');
 const mongoose = require('mongoose');
-const config = require('config');
 
-mongoose.connect(config.get('mongoUri'));
+mongoose.connect(require('../constants').mongoUrl);
+
 refreshMongo(() => {
   process.exit(0);
 });
