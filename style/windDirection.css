@@ -1,0 +1,58 @@
+.logo {
+    width: 200px;
+    color: #ffff;
+    padding: 2px;
+    font-size: 20px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+#show_chart_windDirection {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    clear: both;
+    background-image: url(../image/backgroundLogin.png);
+}
+
+.lineGraph {
+    float: left;
+    position: relative;
+    margin-left: 80px;
+    width: 480px;
+    height: 300px;
+    top: 120px;
+}
+
+#graph_windDirection {
+    top: 20%;
+    left: 25%;
+    z-index: -10;
+}
+
+.pieChart {
+    float: left;
+    width: 480px;
+    height: 300px;
+    position: relative;
+    margin-top:50px;
+    margin-left:150px;
+}
+
+#graph_1_windDirection{
+    top: 20%;
+    left: 25%;
+    z-index: -10;
+    text-align: center;
+}
+
+.logo-1 {
+    width: 200px;
+    color: #ffff;
+    padding: 2px;
+    font-size: 20px;
+    position: absolute;
+    top: 270px;
+    left:210px;
+}

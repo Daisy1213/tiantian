@@ -1,0 +1,28 @@
+.logo{
+    width: 200px;
+    color:#ffff;
+    padding:2px;
+    font-size: 60px;
+    position: absolute;
+    top:50px;
+    left:200px;
+}
+#graph {
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    width:600px;
+    height:399px;
+    border:solid 1px #f0f0f0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position:absolute;
+    top:120px;
+    left:100px;
+    text-align: center;
+}
+#JSChart_graph {
+    right: 0;
+    bottom: 0;
+    top: 100px;
+    left: 30px;
+}

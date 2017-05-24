@@ -1,0 +1,117 @@
+body{
+    background-color: #2E3947;
+    width: 100%;
+    height: 618px;
+    color: white;
+    clear: both;
+}
+
+.pieChart{
+    display: none;
+}
+
+.showData{
+    margin-left: 900px;
+    /*float: left;*/
+    /*margin-top: 120px;*/
+}
+.content-form{
+    background-color: #2E3947;
+    width: 230px;
+    margin:20px auto;
+    text-align: center;
+}
+.itemName{
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 4px;
+
+}
+
+.itemValue{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.title {
+    position: relative;
+    font-size: 60px;
+    width: 230px;
+    height:140px;
+    margin: 20px auto;
+    text-align: center;
+    border-top: 2px solid #bbad91;
+    border-bottom:2px solid #bbad91;
+}
+.content{
+    font-size: 24px;
+    width:230px;
+    margin-left:125px;
+}
+
+.content tr{
+    cursor: pointer;
+
+}
+tr:hover{
+    color: #0dbfdd;
+}
+
+.name{
+    text-align: left;
+    display: inline-block;
+    margin-left: 5px;
+}
+.value{
+    display: inline-block;
+    margin-right:0px;
+    width:100px;
+    text-align: right;
+}
+.row div{
+    font-size: 20px;
+    text-align: left;
+    padding-right: 0px;
+}
+
+.left{
+    margin-top:80px;
+}
+
+.chart{
+    position: relative;
+    width:700px;
+    height:450px;
+    background-color: white;
+    float: left;
+    margin-left:30px;
+}
+
+.button{
+    width:65px;
+    height:150px;
+    margin-left: 700px;
+    position: absolute;
+    top: 0px;
+    /*margin-top:8;*/
+}
+
+.line{
+    height:75px;
+    background-image: url("../image/button1 65×75px.png");
+}
+
+.pie{
+    height:75px;
+    background-image: url("../image/button2 65×75px.png");
+}
+
+#otherChart{
+    display: none;
+}
+
+.row div:hover{
+    color: #0dbfdd;
+}

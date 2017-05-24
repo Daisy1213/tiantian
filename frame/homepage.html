@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <!--<link rel="stylesheet" href="../static/bootstrap-3.3.7-dist/css/bootstrap.css">-->
+    <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+    <!--<script type="text/javascript" src="../static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
+
+    <link rel="stylesheet" href="../style/homepage.css">
+
+    <script type="text/javascript" src="../static/jscharts.js"></script>
+</head>
+<body>
+<div class="left">
+    <div class="chart">
+        <div id="show_chart_temp">
+            <div class="lineGraph_temp">
+                <div id="graph_temp">Loading graph...
+                </div>
+                <script type="text/javascript" src="../checkInput/temperature.js">
+                </script>
+            </div>
+            <div class="pieChart">
+                <div id="graph_1_temp">Loading graph...
+                </div>
+                <script type="text/javascript" src="../checkInput/temperature_1.js">
+                </script>
+            </div>
+        </div>
+        <div id="otherChart">
+            <div id="show_chart_humidity">
+                <div class="lineGraph_humidity">
+                    <div id="graph_humidity">Loading graph...
+                    </div>
+                    <script type="text/javascript" src="../checkInput/humidity.js">
+                    </script>
+                </div>
+                <div class="pieChart">
+                    <div id="graph_1_humidity">Loading graph...
+                    </div>
+                    <div class="logo-1">
+                        <span>饼形图</span>
+                    </div>
+                    <script type="text/javascript" src="../checkInput/humidity_1.js">
+                    </script>
+                </div>
+            </div>
+            <div id="show_chart_pm2">
+                <div class="lineGraph">
+                    <div id="graph_pm2">Loading graph...
+                    </div>
+                    <div class="logo">
+                        <span>折线图</span>
+                    </div>
+                    <script type="text/javascript" src="../checkInput/PM2.js">
+                    </script>
+                </div>
+                <div class="pieChart">
+                    <div id="graph_1_pm2">Loading graph...
+                    </div>
+                    <script type="text/javascript" src="../checkInput/PM2_1.js">
+                    </script>
+                </div>
+            </div>
+            <div id="show_chart_pm10">
+                <div class="lineGraph">
+                    <div id="graph_pm10">Loading graph...
+                    </div>
+                    <script type="text/javascript" src="../checkInput/PM10.js">
+                    </script>
+                </div>
+                <div class="pieChart">
+                    <div id="graph_1_pm10">Loading graph...
+                    </div>
+                    <script type="text/javascript" src="../checkInput/PM10_1.js">
+                    </script>
+                </div>
+            </div>
+            <div id="show_chart_windSpeed">
+                <div class="lineGraph">
+                    <div id="graph_windSpeed">Loading graph...
+                    </div>
+                    <script type="text/javascript" src="../checkInput/windSpeed.js">
+                    </script>
+                </div>
+                <div class="pieChart">
+                    <div id="graph_1_windSpeed">Loading graph...
+                    </div>
+                    <script type="text/javascript" src="../checkInput/windSpeed_1.js">
+                    </script>
+                </div>
+            </div>
+            <div id="show_chart_windDirection">
+                <div class="lineGraph">
+                    <div id="graph_windDirection">Loading graph...
+                    </div>
+                    <script type="text/javascript" src="../checkInput/windDirection.js">
+                    </script>
+                </div>
+                <div class="pieChart">
+                    <div id="graph_1_windDirection">Loading graph...
+                    </div>
+                    <script type="text/javascript" src="../checkInput/windDirection_1.js">
+                    </script>
+                </div>
+            </div>
+            <div id="show_chart_noise">
+                <div class="lineGraph">
+                    <div id="graph_noise">Loading graph...
+                    </div>
+                    <script type="text/javascript" src="../checkInput/noise.js">
+                    </script>
+                </div>
+                <div class="pieChart">
+                    <div id="graph_1_noise">Loading graph...
+                    </div>
+                    <script type="text/javascript" src="../checkInput/noise_1.js">
+                    </script>
+                </div>
+            </div>
+            <div id="show_chart_barometicPress">
+                <div class="lineGraph">
+                    <div id="graph_barometicPress">Loading graph...
+                    </div>
+                    <script type="text/javascript" src="../checkInput/barometicPressure.js">
+                    </script>
+                </div>
+                <div class="pieChart">
+                    <div id="graph_1_barometicPress">Loading graph...
+                    </div>
+                    <script type="text/javascript" src="../checkInput/barometicPressure_1.js">
+                    </script>
+                </div>
+            </div>
+    </div>
+    <div class="button">
+        <div class="line"></div>
+        <div class="pie"></div>
+    </div>
+</div>
+<div class="showData">
+    <div class="title"><span class="itemName">溫度</span><span class="itemValue">29℃</span></div>
+    <table class="content">
+        <tr class="temp">
+            <td>温度：</td>
+            <td>29℃</td>
+        </tr>
+        <tr class="humidity">
+            <td>湿度：</td>
+            <td>24%</td>
+        </tr>
+        <tr class="pm2">
+            <td>PM2.5：</td>
+            <td>28</td>
+        </tr>
+        <tr class="pm10">
+            <td>PM10：</td>
+            <td>94</td>
+        </tr>
+        <tr class="windSpeed">
+            <td>风速：</td>
+            <td>56db</td>
+        </tr>
+        <tr class="windDirection">
+            <td>风向：</td>
+            <td>东南</td>
+        </tr>
+        <tr class="noise">
+            <td>噪音：</td>
+            <td>29℃</td>
+        </tr>
+        <tr class="barometricPressure">
+            <td>大气压：</td>
+            <td>1008hpa</td>
+        </tr>
+    </table>
+</div>
+
+
+</div>
+<script type="text/javascript" src="../checkInput/homepage.js"></script>
+</body>
+</html>

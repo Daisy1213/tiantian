@@ -1,0 +1,45 @@
+
+.input-content{
+    padding-top: 90px;
+}
+.content-form{
+    background-image: url(../image/backgroundLogin.png);
+    width: 100%;
+    height:618px;
+    font-family:"微软雅黑";
+    text-align:center;
+    vertical-align: middle;
+    padding-left:300px;
+    padding-top:140px;
+}
+.content-form .user,
+.content-form .password{
+    width: 25%;
+    height:20px;
+    padding:10px;
+    font-size: 1.5em;
+    border:1px solid #cccbcb;
+    border-radius:5px;
+    letter-spacing:1px;
+    margin-top:10px;
+}
+.content-form.input:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 5px #0dbfdd;
+    box-shadow: 0 0 5px #0dbfdd;
+}
+
+#login{
+    width: 100px;
+    height:40px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size:19px;
+    margin-top:10px;
+    border-radius:5px;
+}
+
+#change-margin-1,#change-margin-2{
+    margin-bottom: 20px;
+}

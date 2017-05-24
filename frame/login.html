@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" href="../style/login.css" type="text/css"/>
+    <script type="text/javascript" src="../static/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="content-form">
+    <!--<div class="content-title">登录</div>-->
+    <form method="post" action="" onsubmit="submitTest()">
+        <div class="input-content">
+            <div id="change-margin-1">
+                <input class="user" type="text" name="user" placeholder="用户名"
+                       onblur="checkInput()">
+                <!--text代表文本域-->
+            </div>
+            <!--input的value为空时弹出提醒-->
+            <div id="change-margin-2">
+                <input class="password" type="password" name="passwored"
+                       placeholder="密码" onblur="checkInput()">
+                <!--password代表密码域-->
+            </div>
+            <!--input的value为空时弹出提醒-->
+            <div id="change-margin-3">
+                <a href="homepage.html">
+                    <input id="login" type="button" value="登录"/>
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+</form>
+</div>
+<script type="text/javascript" src="../checkInput/login.js"></script>
+</body>
+</html>
