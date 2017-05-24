@@ -1,9 +1,10 @@
 /**
  * Created by tian on 2017/5/24.
  */
-const Item = require('./../model/item');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/supermarket');
+const Item = require('./model/item');
+
+mongoose.connect('mongodb://localhost/env_listener');
 
 
 const data = {
