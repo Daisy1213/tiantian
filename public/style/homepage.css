@@ -6,14 +6,12 @@ body{
     clear: both;
 }
 
-.pieChart{
+.pieChart_temp{
     display: none;
 }
 
 .showData{
     margin-left: 900px;
-    /*float: left;*/
-    /*margin-top: 120px;*/
 }
 .content-form{
     background-color: #2E3947;
@@ -95,17 +93,16 @@ tr:hover{
     margin-left: 700px;
     position: absolute;
     top: 0px;
-    /*margin-top:8;*/
 }
 
 .line{
     height:75px;
-    background-image: url("../image/button1 65×75px.png");
+    background-image: url("../image/button1.png");
 }
 
 .pie{
     height:75px;
-    background-image: url("../image/button2 65×75px.png");
+    background-image: url("../image/button2.png");
 }
 
 #otherChart{

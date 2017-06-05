@@ -18,7 +18,7 @@ myChart.setGraphExtend(true);
 myChart.setGridColor('#b3b3b3');
 myChart.setLineWidth(4);
 myChart.setLineColor('#9F0505');
-myChart.setSize(480, 200);
+myChart.setSize(700,450);
 myChart.setBackgroundImage('../image/chart_bg.jpg');
 myChart.draw();
 

@@ -10,10 +10,6 @@ myChart.setAxisNameX('H');
 myChart.setAxisNameY('T');
 myChart.setAxisColor('#d19100');
 myChart.setAxisValuesColor('#1d1d1d');
-// myChart.setAxisPaddingLeft(50);
-// myChart.setAxisPaddingRight(50);
-// myChart.setAxisPaddingTop(50);
-// myChart.setAxisPaddingBottom(40);
 myChart.setAxisValuesNumberX(24);
 myChart.setGraphExtend(true);
 myChart.setGridColor('#b3b3b3');
@@ -23,21 +19,3 @@ myChart.setSize(480, 200);
 myChart.setBackgroundImage('../image/chart_bg.jpg');
 myChart.draw();
 
-// var data = {
-//     labels: ["1h", "2h", "3h", "4h", "5h", "6h", "7h", "8h", "9h", "10h", "11h", "12h",
-//         "13h", "14h", "15h", "16h", "17h", "18h", "19h", "20h", "21h", "22h", "23h", "24h"],
-//     datasets: [
-//         {
-//             label: "温度值",
-//             //xAxisID:"时刻",
-//             //yAxisID:"/tem",
-//             backgroundColor: "black",
-//             data: [15, 14, 14, 14, 12, 13, 16, 18, 21, 23, 26, 27, 28, 29, 30, 29, 28, 27, 24, 22, 18, 17, 18, 17]
-//         }]
-// }
-// // xLabel:"时刻",yLabel:"tem"
-//
-// Chart.defaults.global.responsive = false;
-// var $canvas = document.getElementById("canvas");
-// ctx = $canvas.getContext("2d");
-// var testLinchart = new Chart(ctx, {type: "line", data: data,})

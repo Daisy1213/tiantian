@@ -107,14 +107,75 @@ $(".barometricPressure").click(function () {
 
 $(".pie").click(function () {
     $(".lineGraph_temp").hide();
-    $(".pieChart").show();
+    $(".pieChart_temp").show();
 });
-
 $(".line").click(function () {
-    $(".pieChart").hide();
+    $(".pieChart_temp").hide();
     $(".lineGraph_temp").show();
 })
 
+$(".pie").click(function () {
+    $(".lineGraph_humidity").hide();
+    $(".pieChart_humidity").show();
+});
+$(".line").click(function () {
+    $(".pieChart_humidity").hide();
+    $(".lineGraph_humidity").show();
+})
+
+$(".pie").click(function () {
+    $(".lineGraph_pm2").hide();
+    $(".pieChart_pm2").show();
+});
+$(".line").click(function () {
+    $(".pieChart_pm2").hide();
+    $(".lineGraph_pm2").show();
+})
+
+$(".pie").click(function () {
+    $(".lineGraph_pm10").hide();
+    $(".pieChart_pm10").show();
+});
+$(".line").click(function () {
+    $(".pieChart_pm10").hide();
+    $(".lineGraph_pm10").show();
+})
+
+$(".pie").click(function () {
+    $(".lineGraph_windSpeed").hide();
+    $(".pieChart_windSpeed").show();
+});
+$(".line").click(function () {
+    $(".pieChart_windSpeed").hide();
+    $(".lineGraph_windSpeed").show();
+})
+
+$(".pie").click(function () {
+    $(".lineGraph_windDirection").hide();
+    $(".pieChart_windDirection").show();
+});
+$(".line").click(function () {
+    $(".pieChart_windDirection").hide();
+    $(".lineGraph_windDirection").show();
+})
+
+$(".pie").click(function () {
+    $(".lineGraph_noise").hide();
+    $(".pieChart_noise").show();
+});
+$(".line").click(function () {
+    $(".pieChart_noise").hide();
+    $(".lineGraph_noise").show();
+})
+
+$(".pie").click(function () {
+    $(".lineGraph_barometicPress").hide();
+    $(".pieChart_barometicPress").show();
+});
+$(".line").click(function () {
+    $(".pieChart_barometicPress").hide();
+    $(".lineGraph_barometicPress").show();
+})
 
 function showData(dataName){
     //当前数据获取类名'

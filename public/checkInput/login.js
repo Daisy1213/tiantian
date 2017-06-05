@@ -3,7 +3,7 @@ function checkInput() {
     var a = document.getElementsByTagName("input")[0].value;
     var b = document.getElementsByTagName("input")[1].value;
     if(a != '' && b != ''){
-        // $("#login").attr('disabled', false);
+        $("#login").attr('disabled', false);
         //TODO
     }
 }
