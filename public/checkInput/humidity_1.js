@@ -1,7 +1,21 @@
 /**
  * Created by tian on 2017/5/10.
+ *
  */
-var myData = new Array(['25-34',25], ['35-44',21], ['45-54',21], ['55-64',33], ['Not sure/Don\'t know', 0]);
+var temp = localStorage.getItem('temppieCoordinateArrays');
+var temps = temp.split(',');
+
+for (var j = 0; j < temps.length; j += 2) {
+  temps[j + 1] =  parseInt(temps[j + 1]);
+}
+
+var coordinateArray = [];
+for (var i = 0; i < temps.length; i+=2) {
+  coordinateArray.push([temps[i], temps[i + 1]]);
+}
+
+
+var myData = coordinateArray;
 var colors = ['#C40000', '#750303', '#F9ECA2', '#FA9000', '#FA5400'];
 var myChart1 = new JSChart('graph_1_humidity', 'pie');
 myChart1.setDataArray(myData);

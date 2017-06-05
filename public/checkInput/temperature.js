@@ -1,12 +1,14 @@
 /**
  * Created by tian on 2017/5/6.
  */
+var temp = localStorage.getItem('tempLineCoordinateArrays');
+var numArrays = temp.split(',').map( item => parseInt(item));
+var coordinateArray = [];
+for(var i = 0; i < numArrays.length; i+=2){
+  coordinateArray.push([numArrays[i], numArrays[i+1]]);
+}
 
-
-
-var myData1 = new Array([1,15], [2,14], [3,14], [4,14], [5,12], [6,13], [7,16], [8,18],
-    [9,21], [10,23], [11,26],[12,27],[13,28],[14,29],[15,30],[16,29],
-    [17,28],[18,27],[19,24],[20,22],[21,18],[22,17],[23,18],[24,17]);
+var myData1 = coordinateArray;
 var myChart = new JSChart('graph_temp', 'line');
 myChart.setDataArray(myData1);
 myChart.setTitle('Temperratura of Every Hours');

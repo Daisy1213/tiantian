@@ -2,23 +2,41 @@
  * Created by tian on 2017/5/8.
  */
 
-Window.onload(request());
+request();
 
-var coordinates;
-
+//向服务器发送请求，获取数据
 function request() {
   $.get('/items', function (data) {
     coordinates = data;
-    console.log(data[0].value);
     $('.tempValue').text(data[0].value);
-
+    $('.itemValue').text(data[0].value);
+    $('.humidityValue').text(data[1].value);
+    $('.pm2Value').text(data[2].value);
+    $('.pm10Value').text(data[3].value);
+    $('.windSpeedValue').text(data[4].value);
+    $('.windDirectionValue').text(data[5].value);
+    $('.noiseValue').text(data[6].value);
+    $('.barometricPressureValue').text(data[7].value);
+    window.localStorage.tempLineCoordinateArrays = data[0].LineCoordinateArrays;
+    window.localStorage.temppieCoordinateArrays = data[0].pieCoordinateArrays;
+    window.localStorage.humidityLineCoordinateArrays = data[1].LineCoordinateArrays;
+    window.localStorage.humiditypieCoordinateArrays = data[1].pieCoordinateArrays;
+    window.localStorage.pm2LineCoordinateArrays = data[2].LineCoordinateArrays;
+    window.localStorage.pm2pieCoordinateArrays = data[2].pieCoordinateArrays;
+    window.localStorage.pm10LineCoordinateArrays = data[3].LineCoordinateArrays;
+    window.localStorage.pm10pieCoordinateArrays = data[3].pieCoordinateArrays;
+    window.localStorage.windSpeedLineCoordinateArrays = data[4].LineCoordinateArrays;
+    window.localStorage.windSpeedpieCoordinateArrays = data[4].pieCoordinateArrays;
+    window.localStorage.windDirectionLineCoordinateArrays = data[5].LineCoordinateArrays;
+    window.localStorage.windDirectionpieCoordinateArrays = data[5].pieCoordinateArrays;
+    window.localStorage.noiseLineCoordinateArrays = data[6].LineCoordinateArrays;
+    window.localStorage.noisepieCoordinateArrays = data[6].pieCoordinateArrays;
+    window.localStorage.barometicPressLineCoordinateArrays = data[7].LineCoordinateArrays;
+    window.localStorage.barometicPresspieCoordinateArrays = data[7].pieCoordinateArrays;
   })
 };
 
-module.exports = coordinates;
-
 $(".temp").click(function () {
-  // console.log('jdjdj')
   $("#show_chart_temp").show();
   $("#show_chart_humidity").hide();
   $("#show_chart_pm2").hide();

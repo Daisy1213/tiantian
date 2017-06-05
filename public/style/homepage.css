@@ -6,7 +6,11 @@ body{
     clear: both;
 }
 
-.pieChart_temp{
+.pieChart_temp {
+    display: none;
+}
+
+.pieChart_humidity{
     display: none;
 }
 

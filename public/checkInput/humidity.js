@@ -1,9 +1,14 @@
 /**
  * Created by tian on 2017/5/8.
  */
-var myData = new Array([1,30], [2,32], [3,34], [4,36], [5,40], [6,45], [7,50], [8,55],
-    [9,58], [10,63], [11,60],[12,58],[13,40],[14,35],[15,25],[16,30],
-    [17,34],[18,39],[19,45],[20,50],[21,56],[22,62],[23,57],[24,50]);
+var temp = localStorage.getItem('tempLineCoordinateArrays');
+var numArrays = temp.split(',').map( item => parseInt(item));
+var coordinateArray = [];
+for(var i = 0; i < numArrays.length; i+=2){
+  coordinateArray.push([numArrays[i], numArrays[i+1]]);
+}
+
+var myData = coordinateArray;
 var myChart = new JSChart('graph_humidity', 'line');
 myChart.setDataArray(myData);
 myChart.setTitle('humidity of Every Hours');
